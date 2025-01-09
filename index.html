@@ -18,30 +18,69 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
- 
     <!-- header -->
-     <header>
+    <header>
       <!-- navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-menu">
+        <button
+          class="navbar-toggler nav-button"
+          data-bs-toggle="collapse"
+          data-bs-target="#meue"
+        >
+          <div class="line1 bg-white"></div>
+          <div class="line2 bg-white"></div>
+          <div class="line3 bg-white"></div>
+        </button>
+        <div class="collapse navbar-collapse" id="meue">
+          <ul class="navbar-nav list-unstyled">
+            <li class="nav-item">
+              <a href="#" class="nav-link m-2 menu-item">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link m-2 menu-item">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link m-2 menu-item">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link m-2 menu-item">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link m-2 menu-item">Coach</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link m-2 menu-item">Plans</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <!-- end of navbar -->
       <!-- banner -->
-       <div class="text-light text-uppercase text-left banner">
+      <div
+        class="text-light text-uppercase text-left banner"
+        style="font-family: Impact"
+      >
         <h1 class="display-1 heading-banner fw-bold">Oxygen gym</h1>
-        <p class="fw-bold h1 banner-paragraph p-2">
+        <p class="fw-bold h1 mt-3 banner-paragraph p-2">
           <span class="me-1">No Pain</span>
           <span class="">no gain</span>
         </p>
-
-       </div>
+      </div>
       <!-- end of banner -->
-     </header>
- 
+    </header>
     <!-- end of header -->
     <!-- Bootstrap JS und Popper.js -->
+    <script src="./scripts/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-   <script>
-     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-   </script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
