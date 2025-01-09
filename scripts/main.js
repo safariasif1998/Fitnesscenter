@@ -18,3 +18,16 @@ $(window).scroll(function(){
     }
 })
 /* end of custom-class  */
+/* start from animation of achievements   */
+$(window).scroll(function(){
+    let position = $(this).scrollTop();
+    if(position>=700){
+        $('.achievements-right').addClass("animationRight");
+        $('.achievements-left').addClass("animationLeft");
+    }
+    else{
+        $('.achievements-right').removeClass("animationRight");
+        $('.achievements-left').removeClass("animationLeft");
+    }
+})
+/* end animation of achievements */

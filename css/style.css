@@ -4,10 +4,10 @@
 }
 /* utility  */
 .lh-1{
-    line-height: 30px;
+    line-height: 25px;
 }
 .lh-2{
-    line-height: 35px;
+    line-height: 30px;
 }
 /* end of utility */
 /* body{
@@ -89,3 +89,37 @@ transform: translateX(0px);
 }
 /* end of navbar */
 /* end of header */
+
+/* achievements */
+.achievements{
+    background-color: #151f20;
+}
+.animationRight{
+    animation-name: AnimationRight;
+    animation-duration: 3s;
+}
+.animationLeft{
+    animation-name: AnimationLeft;
+    animation-duration: 3s;
+}
+@keyframes AnimationRight{
+    0%{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes AnimationLeft{
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* end of achievements  */
