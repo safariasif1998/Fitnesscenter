@@ -122,6 +122,15 @@ transform: translateX(0px);
         opacity: 1;
     }
 }
+
+.underline{
+    width: 180px;
+    border: 2px solid #eee;
+    margin: auto;
+}
+.underline-dark{
+    border: 2px solid #444;
+}
 /* end of achievements  */
 
 /* services */
@@ -149,3 +158,14 @@ transform: translateX(0px);
     transform: translateY(-14px);
 }
 /* end of services */
+
+/* Gallery */
+.gallary-list{
+    cursor: pointer;
+    user-select: none;
+    color: #444;
+}
+.active{
+    color: #2980b9;
+}
+/* end of gallery */

@@ -31,3 +31,17 @@ $(window).scroll(function(){
     }
 })
 /* end animation of achievements */
+/* gallery */
+$('.gallary-list').click(function(){
+    let value = $(this).attr("data-filter");
+    $(this).addClass("active").siblings().removeClass("active");
+    console.log(value);
+    if(value==="all"){
+        $('.filter').show(300);
+    }
+    else{
+        $('.filter').not("." + value).hide(300);
+        $('.filter').filter("." + value).show(300);
+    }
+})
+/* end of gallery */
