@@ -175,3 +175,77 @@ transform: translateX(0px);
     background-color: #151f20;
 }
 /*  */
+
+/* plans und membership */
+.card-1, .card-2, .card-3{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(../imgs/membership.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 7px 8px 50px #444;
+    max-width: 370px;
+}
+.list-item{
+    border-bottom: 2px solid #fff;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 500;
+}
+.register-btn{
+    background-color: #2980b9;
+    width: 150px;
+    margin: auto;
+    color: #ffff;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 0px;
+    box-shadow: 5px 8px 18px #000;
+    transition: all 0.2s;
+}
+.register-btn:hover{
+    background-color: #3498db;
+    transform: translateY(-2px);
+}
+@keyframes fromLeft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes fromRight {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes fromBottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.fromLeft{
+animation-name: fromLeft;
+animation-duration: 4s
+}
+.fromRight{
+animation-name:fromRight ;
+animation-duration: 4s
+}
+.fromBottom{
+animation-name: fromBottom;
+animation-duration: 4s
+}
+/* end of plans und memberships */

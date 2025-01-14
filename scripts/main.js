@@ -45,3 +45,20 @@ $('.gallary-list').click(function(){
     }
 })
 /* end of gallery */
+
+/* plans und membership */
+$(window).scroll(function(){
+    let position = $(this).scrollTop();
+    console.log(position)
+    if(position>=4400){
+        $('.card-1').addClass("fromLeft");
+        $('.card-2').addClass("fromBottom");
+        $('.card-3').addClass("fromRight");
+    }
+    else{
+        $('.card-1').removeClass("fromLeft");
+        $('.card-2').removeClass("fromBottom");
+        $('.card-3').removeClass("fromRight");
+    }
+})
+/* end of plans und membership */
