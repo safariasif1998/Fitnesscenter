@@ -249,3 +249,50 @@ animation-name: fromBottom;
 animation-duration: 4s
 }
 /* end of plans und memberships */
+/* contact */
+.contact{
+    background: linear-gradient(105deg , rgba(21,31,32,0.8) 0%, rgba(21,31,32,0.9) 50%, transparent 50%), url(../imgs/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.input{
+    border: none;
+    color: #cccccc;
+    border-color: none;
+    border-radius: 0;
+    border-bottom: 2px solid #eeee;
+    transition: all 0.4s;
+    
+}
+.input:focus{
+    border: none;
+    color: #3498db;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 2px solid #f5593d;
+}
+.label{
+    display: block;
+    margin-top: -70px;
+    margin-left: 5px;
+    color: #fff;
+    transition: all 0.4s;
+}
+.join-us-btn{
+    background-color: #2980b9;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 7px 0px;
+    transition: all 0.4s;
+}
+.join-us-btn:hover{
+    background-color: #3498db;
+    transform: translateY(-3px);
+}
+.input:placeholder-shown + .label{
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(20px, 20px);
+}
+/* end of contact */
