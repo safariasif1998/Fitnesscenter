@@ -296,3 +296,15 @@ animation-duration: 4s
     transform: translate(20px, 20px);
 }
 /* end of contact */
+/* footer */
+.footer-link{
+    color: #eee;
+    text-decoration: none;
+    transition: all 0.4s;
+    cursor: pointer;
+
+}
+.footer-link:hover{
+    color: #3498db;
+}
+/* end of footer */
